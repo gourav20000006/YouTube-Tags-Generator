@@ -1,0 +1,301 @@
+/**
+ * YouTube Video Tag Generator - Admin Stylesheet
+ */
+
+.yttg-admin-wrap {
+	max-width: 1100px;
+	margin: 20px 20px 0 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.yttg-admin-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.yttg-admin-header-text h1 {
+	margin: 0 0 4px 0;
+	font-size: 24px;
+	font-weight: 700;
+	color: #1d2327;
+}
+
+.yttg-version-badge {
+	margin: 0;
+	font-size: 13px;
+	color: #646970;
+}
+
+.yttg-header-tag {
+	background: #e0f2fe;
+	color: #0369a1;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 4px 10px;
+	border-radius: 6px;
+	border: 1px solid #bae6fd;
+}
+
+/* Security Banner */
+.yttg-security-banner {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	background: #f0fdf4;
+	border: 1px solid #bbf7d0;
+	border-radius: 8px;
+	padding: 14px 18px;
+	margin-bottom: 24px;
+}
+
+.yttg-security-icon {
+	font-size: 22px;
+	line-height: 1;
+}
+
+.yttg-security-content strong {
+	display: block;
+	color: #166534;
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+
+.yttg-security-content p {
+	margin: 0;
+	color: #15803d;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+/* Grid Layout */
+.yttg-grid-layout {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 24px;
+	align-items: start;
+}
+
+@media (max-width: 900px) {
+	.yttg-grid-layout {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Cards */
+.yttg-card {
+	background: #ffffff;
+	border: 1px solid #c3c4c7;
+	border-radius: 8px;
+	padding: 24px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.yttg-card-title {
+	margin: 0 0 6px 0;
+	font-size: 18px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.yttg-card-subtitle {
+	margin: 0 0 20px 0;
+	color: #646970;
+	font-size: 13.5px;
+}
+
+/* Form Groups */
+.yttg-form-group {
+	margin-bottom: 20px;
+}
+
+.yttg-label {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 600;
+	color: #1d2327;
+	margin-bottom: 8px;
+	font-size: 13.5px;
+}
+
+.yttg-key-status {
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 8px;
+	border-radius: 4px;
+}
+
+.yttg-status-active {
+	background: #dcfce7;
+	color: #15803d;
+	border: 1px solid #86efac;
+}
+
+.yttg-status-missing {
+	background: #fef3c7;
+	color: #92400e;
+	border: 1px solid #fde68a;
+}
+
+.yttg-input,
+.yttg-select {
+	width: 100%;
+	max-width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.yttg-input:focus,
+.yttg-select:focus {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+	outline: none;
+}
+
+/* Provider Radio Cards */
+.yttg-provider-radios {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+	.yttg-provider-radios {
+		grid-template-columns: 1fr;
+	}
+}
+
+.yttg-radio-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 14px;
+	border: 1.5px solid #dcdcde;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background: #fcfcfc;
+}
+
+.yttg-radio-card input {
+	margin-top: 3px !important;
+}
+
+.yttg-radio-card:hover {
+	border-color: #2271b1;
+	background: #f6f7f7;
+}
+
+.yttg-radio-card.is-selected {
+	border-color: #2271b1;
+	background: #f0f6fc;
+}
+
+.yttg-radio-title {
+	display: block;
+	font-weight: 600;
+	color: #1d2327;
+	font-size: 14px;
+}
+
+.yttg-radio-desc {
+	display: block;
+	font-size: 12px;
+	color: #646970;
+	margin-top: 2px;
+}
+
+.yttg-provider-section {
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	padding: 18px;
+	margin-bottom: 20px;
+}
+
+.yttg-form-actions {
+	padding-top: 12px;
+	border-top: 1px solid #dcdcde;
+}
+
+.yttg-save-btn {
+	padding: 6px 20px !important;
+	font-size: 14px !important;
+	height: auto !important;
+	line-height: 2 !important;
+}
+
+/* Guide Sidebar */
+.yttg-guide-card {
+	background: #f6f7f7;
+}
+
+.yttg-guide-title {
+	margin: 0 0 14px 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.yttg-step-list {
+	margin: 0 0 20px 0;
+	padding-left: 18px;
+}
+
+.yttg-step-list li {
+	margin-bottom: 14px;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #50575e;
+}
+
+.yttg-step-list li strong {
+	color: #1d2327;
+	display: block;
+	margin-bottom: 2px;
+}
+
+.yttg-code-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #ffffff;
+	border: 1px solid #c3c4c7;
+	padding: 6px 10px;
+	border-radius: 4px;
+	margin-top: 6px;
+}
+
+.yttg-code-box code {
+	font-weight: 600;
+	color: #2271b1;
+	background: transparent;
+	padding: 0;
+}
+
+.yttg-info-box {
+	background: #ffffff;
+	border-left: 4px solid #2271b1;
+	padding: 10px 12px;
+	border-radius: 0 4px 4px 0;
+	font-size: 12.5px;
+	color: #50575e;
+}
+
+.yttg-info-box strong {
+	color: #1d2327;
+	display: block;
+	margin-bottom: 2px;
+}
+
+.yttg-info-box p {
+	margin: 0;
+}
