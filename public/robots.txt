@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://you-tube-tags-generator.vercel.app/sitemap.xml
